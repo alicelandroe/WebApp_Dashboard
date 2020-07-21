@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/components/index.scss",
+		"../scss/components/_header.scss"
+	],
+	"sourcesContent": [
+		"@import 'components/index.scss';",
+		"@import 'header';",
+		"header {\n    background-color: purple;\n}"
+	],
+	"names": [],
+	"mappings": ";AEAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,MAAM;CAC3B"
+}

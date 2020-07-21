@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../../scss/components/index.scss",
+		"../../scss/components/_header.scss"
+	],
+	"sourcesContent": [
+		"@import 'header';",
+		"header {\n    background-color: purple;\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,MAAM;CAC3B"
+}
