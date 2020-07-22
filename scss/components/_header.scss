@@ -1,3 +1,21 @@
 header {
-    background-color: purple;
+    background-color: #9370DB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+}
+
+.header-app-name {
+    color: white;
+    font-size: 1.4em;
+}
+
+.header-app-name,
+.header-items {
+    padding: 10px;
 }

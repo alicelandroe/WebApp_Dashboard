@@ -3,12 +3,16 @@
 	"file": "index.css",
 	"sources": [
 		"../../scss/components/index.scss",
-		"../../scss/components/_header.scss"
+		"../../scss/components/_header.scss",
+		"../../scss/components/_body.scss",
+		"../../scss/components/_other.scss"
 	],
 	"sourcesContent": [
-		"@import 'header';",
-		"header {\n    background-color: purple;\n}"
+		"@import 'header', 'body', 'other';",
+		"header {\n    background-color: #9370DB;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.header-items {\n    display: flex;\n    align-items: center;\n}\n\n.header-app-name {\n    color: white;\n    font-size: 1.4em;\n}\n\n.header-app-name,\n.header-items {\n    padding: 10px;\n}\n",
+		"body {\n    padding: 0px;\n    margin: 0px;\n}",
+		".profile-picture {\n    border-radius: 50%;\n    height: 40px;\n    width: 40px;\n}"
 	],
 	"names": [],
-	"mappings": ";ACAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,MAAM;CAC3B"
+	"mappings": ";ACAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CACtB;;;AAED,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CACtB;;;AAED,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,KAAK;CACnB;;;AAED,AAAA,gBAAgB;AAChB,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;CAChB;;;ACpBD,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,GAAG;CACd;;;ACHD,AAAA,gBAAgB,CAAC;EACb,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACd"
 }

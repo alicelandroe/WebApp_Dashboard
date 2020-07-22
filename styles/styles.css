@@ -1,6 +1,40 @@
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 header {
-  background-color: purple;
+  background-color: #9370DB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.header-app-name {
+  color: white;
+  font-size: 1.4em;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.header-app-name,
+.header-items {
+  padding: 10px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_body.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+.profile-picture {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
