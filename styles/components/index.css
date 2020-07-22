@@ -31,10 +31,39 @@ body {
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+section > div {
+  background: #eee;
+  padding: 1em;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+section > div:nth-child(odd) {
+  background: #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+  }
+  /* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  header {
+    grid-column: 1/4;
+  }
+}
+
+/* line 26, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
 .profile-picture {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
+.navigation {
+  background-color: #583998;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

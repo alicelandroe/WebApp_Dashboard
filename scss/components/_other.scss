@@ -1,3 +1,28 @@
+section > div {
+    background: #eee;
+    padding: 1em;
+}
+
+section > div:nth-child(odd){
+    background: #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    }   
+
+header {
+    grid-column: 1/4;
+}
+
+
+
+
+}
+
+
 .profile-picture {
     border-radius: 50%;
     height: 40px;
