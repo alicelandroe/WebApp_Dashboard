@@ -1,0 +1,29 @@
+.alert {
+    background-color: #7F86CA;
+    border-radius: 5%;
+    width: 90%;
+    margin: 5px auto;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert p {
+    padding: 0px 5px 0px 15px;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+.alert p strong {
+    font-size: 1.1em;
+    padding-right: 5px;
+}
+.alert button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-right: 15px;
+    font-size: 1.7em;
+    flex-direction: column;
+}

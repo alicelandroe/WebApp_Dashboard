@@ -59,39 +59,28 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
-section > div {
-  background: #eee;
-  padding: 1em;
-}
-
-/* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
-section > div:nth-child(odd) {
-  background: #ddd;
-}
-
 @media only screen and (min-width: 768px) {
-  /* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 4, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 10fr;
   }
-  /* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 9, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   header {
     grid-column: 1/4;
   }
-  /* line 20, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 13, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  /* line 25, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 18, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   .full-width {
     grid-column: 1/3;
   }
 }
 
-/* line 33, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+/* line 26, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
 .profile-picture {
   border-radius: 50%;
   height: 35px;
@@ -101,7 +90,7 @@ section > div:nth-child(odd) {
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
 .navigation {
   background-color: #57587F;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
@@ -126,6 +115,66 @@ nav img {
   nav img {
     padding: 15px 0px;
   }
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_dashboard.scss */
+.dashboard-head {
+  display: flex;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_dashboard.scss */
+.dashboard-head h1 {
+  width: 30%;
+  background-color: white;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 16px 10px 6px 10px;
+  margin: 0px 0px 10px 0px;
+  border-right: solid black 1px;
+}
+
+/* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_dashboard.scss */
+.dashboard-head p {
+  width: 70%;
+  background-color: whitesmoke;
+  padding-top: 16px;
+  padding-left: 19px;
+  margin-top: 0px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_alert.scss */
+.alert {
+  background-color: #7F86CA;
+  border-radius: 5%;
+  width: 90%;
+  margin: 5px auto;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_alert.scss */
+.alert p {
+  padding: 0px 5px 0px 15px;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_alert.scss */
+.alert p strong {
+  font-size: 1.1em;
+  padding-right: 5px;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_alert.scss */
+.alert button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 1.7em;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */

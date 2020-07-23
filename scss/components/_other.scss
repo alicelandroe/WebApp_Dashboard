@@ -1,11 +1,4 @@
-section > div {
-    background: #eee;
-    padding: 1em;
-}
 
-section > div:nth-child(odd){
-    background: #ddd;
-}
 
 @media only screen and (min-width: 768px) {
 .wrapper {
