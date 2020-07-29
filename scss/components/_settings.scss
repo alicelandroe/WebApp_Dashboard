@@ -1,22 +1,38 @@
+.settings {
+    width: 97%;
+    margin: auto;
+}
+
 .settings-content {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 93%;
     margin: auto;
 }
 
 .settings-content label {
     display: flex;
     width: 75%;
-    margin: 6px 0px;
+    margin: 10px 0px;
+    font-size: 0.9em;
     color: $gray-text;
     &:first-child {
-        margin-top: 10px;
+        padding-top: 6px;
     }
 }
 
 .settings-content input[type=checkbox] {
     margin-left: auto;
+}
+
+#timezone {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    display: block;
+    background-color: $gray-in-box;
+    border: $border;
+    border-radius: 5px;
 }
 
 .save-button,
