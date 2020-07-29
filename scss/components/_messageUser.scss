@@ -1,0 +1,34 @@
+.message-user {
+    width: 97%;
+    margin: auto;
+    &__searchbox,
+    &__textbox {
+        width: 87%;
+        margin: 15px auto;
+        padding: 10px;
+        display: block;
+        background-color: $gray-in-box;
+        border: $border;
+        border-radius: 5px;
+    }
+    &__textbox {
+        resize: none;
+        font-family: 'Roboto', sans-serif;;
+    }
+}
+
+::placeholder {
+    color: rgb(167, 167, 167);
+}
+
+.send-button {
+    width: 93%;
+    margin: 5px auto;
+    padding: 13px;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    background-color: $light-purple;
+    border: none;
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Your App</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <span class="header-app-name"><strong>Your</strong>App<sup>TM</sup></span>
             <div class="header-items">
                 <img src="icons/icon-bell.svg" alt="notifications" height="20" width="40">
-                
+
                 <div class="profile">
-                    <img src="images/member-3.jpg" alt="profile picture" class="profile-picture"> 
+                    <img src="images/member-3.jpg" alt="profile picture" class="profile-picture">
                     <span class="member-name">Jane Chiu</span>
                 </div>
             </div>
         </header>
-<!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navigation">
             <img src="icons/icon-dashboard.svg" alt="dashboard" height="20" width="40">
             <img src="icons/icon-members.svg" alt="members" height="20" width="40">
@@ -28,148 +30,160 @@
             <img src="icons/icon-settings.svg" alt="settings" height="20" width="40">
         </nav>
 
-            <div class="dashboard-head full-width">
-                <h1>Dashboard</h1>
-                <p>Search</p>
+        <div class="dashboard-head full-width">
+            <h1>Dashboard</h1>
+            <p>Search</p>
+        </div>
+        <!-- Alert message -->
+        <div class="alert full-width">
+            <p><strong>Alert</strong>
+                Quasi delenit necessitatibus unde nesciunt iste omnis volupta recusandae.
+                Maxime nesciunt unde pimus culpa?</p>
+            <button type="button">&times;</button>
+        </div>
+        <!-- Charts -->
+        <canvas id="traffic-chart" width="400" height="400"></canvas>
+        <canvas id="dailyCanvas" width="400" height="400"></canvas>
+        <canvas id="mobile-users" width="400" height="400"></canvas>
+
+        <!-- Social stats section -->
+        <section class="social-stats full-width">
+            <p class="section-header">SOCIAL STATS</p>
+
+            <div class="all-social-boxes">
+                <!-- Twitter -->
+                <div class="social-box">
+                    <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Group</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Group">
+                                <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
+                                <g id="icon-twitter" transform="translate(9.000000, 11.000000)" fill="#FFFFFF"
+                                    fill-rule="nonzero">
+                                    <path
+                                        d="M21,2.01915709 C20.2149533,2.34482759 19.4299065,2.60536398 18.5140187,2.67049808 C19.4299065,2.14942529 20.0841121,1.30268199 20.411215,0.325670498 C19.5607477,0.846743295 18.6448598,1.17241379 17.6635514,1.36781609 C16.9439252,0.521072797 15.7663551,0 14.588785,0 C12.2336449,0 10.271028,1.88888889 10.271028,4.29885057 C10.271028,4.62452107 10.3364486,4.95019157 10.4018692,5.27586207 C6.80373832,5.08045977 3.6635514,3.38697318 1.5046729,0.781609195 C1.11214953,1.43295019 0.91588785,2.14942529 0.91588785,2.93103448 C0.91588785,4.42911877 1.70093458,5.73180077 2.81308411,6.51340996 C2.09345794,6.51340996 1.43925234,6.31800766 0.85046729,5.99233716 C0.85046729,5.99233716 0.85046729,6.05747126 0.85046729,6.05747126 C0.85046729,8.14176245 2.35514019,9.83524904 4.31775701,10.2260536 C3.92523364,10.2911877 3.59813084,10.3563218 3.20560748,10.3563218 C2.94392523,10.3563218 2.68224299,10.3563218 2.42056075,10.2911877 C2.94392523,11.9846743 4.57943925,13.2222222 6.41121495,13.2873563 C4.97196262,14.4597701 3.07476636,15.1111111 1.04672897,15.1111111 C0.719626168,15.1111111 0.327102804,15.1111111 0,15.045977 C1.89719626,16.2835249 4.18691589,17 6.60747664,17 C14.5233645,17 18.8411215,10.48659 18.8411215,4.81992337 C18.8411215,4.62452107 18.8411215,4.42911877 18.8411215,4.29885057 C19.6915888,3.64750958 20.411215,2.86590038 21,2.01915709 Z"
+                                        id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="social-box__label">Twitter
+                        <br>
+                        <span class="social-box__number">10,467</span>
+                    </span>
+                </div>
+                <!-- Facebook -->
+                <div class="social-box">
+                    <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>facebook</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="facebook">
+                                <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
+                                <g id="icon-facebook" transform="translate(15.000000, 9.000000)" fill="#FFFFFF"
+                                    fill-rule="nonzero">
+                                    <path
+                                        d="M9,6.7998965 L5.93491625,6.7998965 L5.93491625,4.62034775 C5.93491625,3.80182157 6.43527263,3.61099151 6.7876871,3.61099151 C7.13929971,3.61099151 8.95068603,3.61099151 8.95068603,3.61099151 L8.95068603,0.0126060857 L5.9718015,0 C2.66495902,0 1.91241981,2.68379218 1.91241981,4.40126268 L1.91241981,6.7998965 L0,6.7998965 L0,10.5078245 L1.91241981,10.5078245 C1.91241981,15.2664045 1.91241981,21 1.91241981,21 L5.93491625,21 C5.93491625,21 5.93491625,15.2098944 5.93491625,10.5078245 L8.64918924,10.5078245 L9,6.7998965 Z"
+                                        id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="social-box__label">Facebook
+                        <br>
+                        <span class="social-box__number">28,903</span>
+                    </span>
+                </div>
+                <!-- google plus -->
+                <div class="social-box">
+                    <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>google plus</title>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="google-plus">
+                                <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
+                                <g id="icon-google-plus" transform="translate(11.000000, 11.000000)" fill="#FFFFFF"
+                                    fill-rule="nonzero">
+                                    <path
+                                        d="M9.50625,14.5471698 C9.50625,14.3773585 9.50625,14.2641509 9.45,14.0943396 C9.39375,13.9811321 9.39375,13.8113208 9.3375,13.6981132 C9.28125,13.5849057 9.225,13.4716981 9.16875,13.3018868 C9.05625,13.1886792 9,13.0754717 8.94375,12.9622642 C8.8875,12.8490566 8.775,12.7924528 8.6625,12.6226415 C8.55,12.509434 8.4375,12.3962264 8.38125,12.3396226 C8.325,12.2830189 8.2125,12.1698113 8.04375,12.0566038 C7.875,11.9433962 7.7625,11.8301887 7.70625,11.8301887 C7.65,11.8301887 7.5375,11.7169811 7.36875,11.6037736 C7.2,11.490566 7.0875,11.3773585 7.03125,11.3773585 C6.91875,11.3773585 6.75,11.3773585 6.46875,11.3773585 C6.075,11.3773585 5.68125,11.3773585 5.34375,11.4339623 C4.95,11.490566 4.55625,11.5471698 4.1625,11.7169811 C3.76875,11.8301887 3.43125,12 3.09375,12.2264151 C2.75625,12.4528302 2.53125,12.6792453 2.3625,13.0188679 C2.19375,13.3584906 2.08125,13.754717 2.08125,14.2075472 C2.08125,14.7169811 2.19375,15.1698113 2.475,15.509434 C2.75625,15.9056604 3.09375,16.1886792 3.4875,16.4150943 C3.88125,16.6415094 4.33125,16.8113208 4.78125,16.9245283 C5.23125,17.0377358 5.68125,17.0943396 6.13125,17.0943396 C6.58125,17.0943396 6.975,17.0377358 7.36875,16.9811321 C7.7625,16.8679245 8.1,16.754717 8.4375,16.5283019 C8.775,16.3584906 9.05625,16.0754717 9.225,15.7358491 C9.39375,15.3962264 9.50625,15 9.50625,14.5471698 Z M8.2125,5.1509434 C8.2125,4.69811321 8.15625,4.24528302 8.04375,3.73584906 C7.93125,3.22641509 7.7625,2.77358491 7.5375,2.32075472 C7.3125,1.86792453 7.03125,1.47169811 6.6375,1.18867925 C6.24375,0.905660377 5.79375,0.735849057 5.34375,0.735849057 C4.66875,0.735849057 4.1625,0.962264151 3.76875,1.47169811 C3.375,1.98113208 3.20625,2.54716981 3.20625,3.28301887 C3.20625,3.62264151 3.2625,3.96226415 3.31875,4.35849057 C3.375,4.75471698 3.54375,5.09433962 3.7125,5.49056604 C3.88125,5.88679245 4.10625,6.22641509 4.33125,6.50943396 C4.55625,6.79245283 4.8375,7.0754717 5.175,7.24528302 C5.5125,7.41509434 5.85,7.52830189 6.24375,7.52830189 C6.91875,7.52830189 7.425,7.30188679 7.7625,6.8490566 C8.04375,6.45283019 8.2125,5.88679245 8.2125,5.1509434 Z M6.80625,0 L11.53125,0 L10.06875,0.849056604 L8.60625,0.849056604 C9.1125,1.18867925 9.50625,1.64150943 9.7875,2.20754717 C10.06875,2.77358491 10.2375,3.39622642 10.2375,4.01886792 C10.2375,4.52830189 10.18125,5.03773585 10.0125,5.43396226 C9.84375,5.83018868 9.61875,6.16981132 9.39375,6.45283019 C9.16875,6.67924528 8.94375,6.96226415 8.6625,7.13207547 C8.4375,7.35849057 8.2125,7.58490566 8.04375,7.81132075 C7.875,8.03773585 7.81875,8.26415094 7.81875,8.54716981 C7.81875,8.71698113 7.875,8.94339623 7.9875,9.11320755 C8.1,9.28301887 8.26875,9.45283019 8.4375,9.62264151 C8.60625,9.79245283 8.83125,9.96226415 9.05625,10.1320755 C9.28125,10.3018868 9.50625,10.5283019 9.73125,10.754717 C9.95625,10.9811321 10.18125,11.2075472 10.35,11.490566 C10.51875,11.7735849 10.6875,12.0566038 10.8,12.3962264 C10.9125,12.7358491 10.96875,13.1320755 10.96875,13.5283019 C10.96875,14.7169811 10.4625,15.7358491 9.45,16.5849057 C8.38125,17.5471698 6.8625,18 4.89375,18 C4.44375,18 4.05,17.9433962 3.6,17.8867925 C3.15,17.8301887 2.7,17.7169811 2.30625,17.5471698 C1.85625,17.3773585 1.4625,17.1509434 1.125,16.9245283 C0.7875,16.6981132 0.50625,16.3584906 0.28125,15.9622642 C0.1125,15.6226415 0,15.2264151 0,14.7169811 C0,14.2641509 0.1125,13.8113208 0.39375,13.245283 C0.61875,12.7924528 0.95625,12.3962264 1.40625,12.0566038 C1.85625,11.7169811 2.41875,11.4339623 2.98125,11.2641509 C3.54375,11.0943396 4.10625,10.9811321 4.66875,10.8679245 C5.175,10.8113208 5.7375,10.754717 6.3,10.6981132 C5.85,10.0754717 5.625,9.56603774 5.625,9.05660377 C5.625,8.94339623 5.625,8.88679245 5.625,8.77358491 C5.625,8.71698113 5.68125,8.60377358 5.68125,8.54716981 C5.68125,8.49056604 5.7375,8.43396226 5.79375,8.32075472 C5.85,8.20754717 5.85,8.1509434 5.85,8.09433962 C5.56875,8.1509434 5.2875,8.1509434 5.11875,8.1509434 C4.05,8.1509434 3.15,7.81132075 2.3625,7.0754717 C1.575,6.33962264 1.2375,5.49056604 1.2375,4.41509434 C1.2375,3.39622642 1.575,2.49056604 2.25,1.69811321 C2.925,0.962264151 3.76875,0.452830189 4.78125,0.226415094 C5.45625,0.0566037736 6.13125,0 6.80625,0 Z M18,2.77358491 L18,4.18867925 L15.24375,4.18867925 L15.24375,6.96226415 L13.8375,6.96226415 L13.8375,4.18867925 L11.08125,4.18867925 L11.08125,2.77358491 L13.8375,2.77358491 L13.8375,0 L15.24375,0 L15.24375,2.77358491 L18,2.77358491 Z"
+                                        id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="social-box__label">Google+
+                        <br>
+                        <span class="social-box__number">3,622</span>
+                    </span>
+                </div>
             </div>
-<!-- Alert message -->
-            <div class="alert full-width">
-                <p><strong>Alert</strong> 
-                    Quasi delenit necessitatibus unde nesciunt iste omnis volupta recusandae. 
-                    Maxime nesciunt unde pimus culpa?</p>
-                <button type="button">&times;</button>
+        </section>
+        <!-- New members section -->
+        <section class="new-members">
+            <p class="section-header">NEW MEMBERS</p>
+            <!-- new member box -->
+            <div class="new-member-box">
+                <img src="images/member-1.jpg" alt="profile image" class="new-member-box__profile-img">
+
+                <div class="new-member-box__text-content">
+                    <div class="new-member-box__first-row">
+                        <span class="new-member-box__name">
+                            Victoria Chambers
+                        </span>
+                        <span class="new-member-box__date">10/15/15</span>
+                    </div>
+
+                    <span class="new-member-box__email">victoria.chambers80@example.com</span>
+                </div>
             </div>
-<!-- Charts -->
-            <canvas id="traffic-chart" width="400" height="400"></canvas>
-            <canvas id="dailyCanvas" width="400" height="400"></canvas>
-            <canvas id="mobile-users" width="400" height="400"></canvas>
+            <!-- new member box -->
+            <div class="new-member-box">
+                <img src="images/member-2.jpg" alt="profile image" class="new-member-box__profile-img">
 
-<!-- Social stats section -->
-            <section class="social-stats full-width">
-                <p class="section-header">SOCIAL STATS</p>
-
-                <div class="all-social-boxes"> 
-                    <!-- Twitter -->
-                    <div class="social-box">
-                        <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>Group</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Group">
-                                    <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
-                                    <g id="icon-twitter" transform="translate(9.000000, 11.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                                        <path d="M21,2.01915709 C20.2149533,2.34482759 19.4299065,2.60536398 18.5140187,2.67049808 C19.4299065,2.14942529 20.0841121,1.30268199 20.411215,0.325670498 C19.5607477,0.846743295 18.6448598,1.17241379 17.6635514,1.36781609 C16.9439252,0.521072797 15.7663551,0 14.588785,0 C12.2336449,0 10.271028,1.88888889 10.271028,4.29885057 C10.271028,4.62452107 10.3364486,4.95019157 10.4018692,5.27586207 C6.80373832,5.08045977 3.6635514,3.38697318 1.5046729,0.781609195 C1.11214953,1.43295019 0.91588785,2.14942529 0.91588785,2.93103448 C0.91588785,4.42911877 1.70093458,5.73180077 2.81308411,6.51340996 C2.09345794,6.51340996 1.43925234,6.31800766 0.85046729,5.99233716 C0.85046729,5.99233716 0.85046729,6.05747126 0.85046729,6.05747126 C0.85046729,8.14176245 2.35514019,9.83524904 4.31775701,10.2260536 C3.92523364,10.2911877 3.59813084,10.3563218 3.20560748,10.3563218 C2.94392523,10.3563218 2.68224299,10.3563218 2.42056075,10.2911877 C2.94392523,11.9846743 4.57943925,13.2222222 6.41121495,13.2873563 C4.97196262,14.4597701 3.07476636,15.1111111 1.04672897,15.1111111 C0.719626168,15.1111111 0.327102804,15.1111111 0,15.045977 C1.89719626,16.2835249 4.18691589,17 6.60747664,17 C14.5233645,17 18.8411215,10.48659 18.8411215,4.81992337 C18.8411215,4.62452107 18.8411215,4.42911877 18.8411215,4.29885057 C19.6915888,3.64750958 20.411215,2.86590038 21,2.01915709 Z" id="Path"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="social-box__label">Twitter 
-                            <br>
-                            <span class="social-box__number">10,467</span>
+                <div class="new-member-box__text-content">
+                    <div class="new-member-box__first-row">
+                        <span class="new-member-box__name">
+                            Matt Byrd
                         </span>
+                        <span class="new-member-box__date">10/15/15</span>
                     </div>
-                    <!-- Facebook -->
-                    <div class="social-box">
-                        <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>facebook</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="facebook">
-                                    <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
-                                    <g id="icon-facebook" transform="translate(15.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                                        <path d="M9,6.7998965 L5.93491625,6.7998965 L5.93491625,4.62034775 C5.93491625,3.80182157 6.43527263,3.61099151 6.7876871,3.61099151 C7.13929971,3.61099151 8.95068603,3.61099151 8.95068603,3.61099151 L8.95068603,0.0126060857 L5.9718015,0 C2.66495902,0 1.91241981,2.68379218 1.91241981,4.40126268 L1.91241981,6.7998965 L0,6.7998965 L0,10.5078245 L1.91241981,10.5078245 C1.91241981,15.2664045 1.91241981,21 1.91241981,21 L5.93491625,21 C5.93491625,21 5.93491625,15.2098944 5.93491625,10.5078245 L8.64918924,10.5078245 L9,6.7998965 Z" id="Path"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="social-box__label">Facebook
-                            <br>
-                            <span class="social-box__number">28,903</span>
+
+                    <span class="new-member-box__email">matt.byrd80@example.com</span>
+                </div>
+            </div>
+            <!-- new member box -->
+            <div class="new-member-box">
+                <img src="images/member-3.jpg" alt="profile image" class="new-member-box__profile-img">
+
+                <div class="new-member-box__text-content">
+                    <div class="new-member-box__first-row">
+                        <span class="new-member-box__name">
+                            Abby Wood
                         </span>
+                        <span class="new-member-box__date">10/15/15</span>
                     </div>
-                    <!-- google plus -->
-                    <div class="social-box">
-                        <svg width="52px" height="52px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>google plus</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="google-plus">
-                                    <circle id="Oval" fill="#7F86CA" cx="19.5" cy="19.5" r="19.5"></circle>
-                                    <g id="icon-google-plus" transform="translate(11.000000, 11.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                                        <path d="M9.50625,14.5471698 C9.50625,14.3773585 9.50625,14.2641509 9.45,14.0943396 C9.39375,13.9811321 9.39375,13.8113208 9.3375,13.6981132 C9.28125,13.5849057 9.225,13.4716981 9.16875,13.3018868 C9.05625,13.1886792 9,13.0754717 8.94375,12.9622642 C8.8875,12.8490566 8.775,12.7924528 8.6625,12.6226415 C8.55,12.509434 8.4375,12.3962264 8.38125,12.3396226 C8.325,12.2830189 8.2125,12.1698113 8.04375,12.0566038 C7.875,11.9433962 7.7625,11.8301887 7.70625,11.8301887 C7.65,11.8301887 7.5375,11.7169811 7.36875,11.6037736 C7.2,11.490566 7.0875,11.3773585 7.03125,11.3773585 C6.91875,11.3773585 6.75,11.3773585 6.46875,11.3773585 C6.075,11.3773585 5.68125,11.3773585 5.34375,11.4339623 C4.95,11.490566 4.55625,11.5471698 4.1625,11.7169811 C3.76875,11.8301887 3.43125,12 3.09375,12.2264151 C2.75625,12.4528302 2.53125,12.6792453 2.3625,13.0188679 C2.19375,13.3584906 2.08125,13.754717 2.08125,14.2075472 C2.08125,14.7169811 2.19375,15.1698113 2.475,15.509434 C2.75625,15.9056604 3.09375,16.1886792 3.4875,16.4150943 C3.88125,16.6415094 4.33125,16.8113208 4.78125,16.9245283 C5.23125,17.0377358 5.68125,17.0943396 6.13125,17.0943396 C6.58125,17.0943396 6.975,17.0377358 7.36875,16.9811321 C7.7625,16.8679245 8.1,16.754717 8.4375,16.5283019 C8.775,16.3584906 9.05625,16.0754717 9.225,15.7358491 C9.39375,15.3962264 9.50625,15 9.50625,14.5471698 Z M8.2125,5.1509434 C8.2125,4.69811321 8.15625,4.24528302 8.04375,3.73584906 C7.93125,3.22641509 7.7625,2.77358491 7.5375,2.32075472 C7.3125,1.86792453 7.03125,1.47169811 6.6375,1.18867925 C6.24375,0.905660377 5.79375,0.735849057 5.34375,0.735849057 C4.66875,0.735849057 4.1625,0.962264151 3.76875,1.47169811 C3.375,1.98113208 3.20625,2.54716981 3.20625,3.28301887 C3.20625,3.62264151 3.2625,3.96226415 3.31875,4.35849057 C3.375,4.75471698 3.54375,5.09433962 3.7125,5.49056604 C3.88125,5.88679245 4.10625,6.22641509 4.33125,6.50943396 C4.55625,6.79245283 4.8375,7.0754717 5.175,7.24528302 C5.5125,7.41509434 5.85,7.52830189 6.24375,7.52830189 C6.91875,7.52830189 7.425,7.30188679 7.7625,6.8490566 C8.04375,6.45283019 8.2125,5.88679245 8.2125,5.1509434 Z M6.80625,0 L11.53125,0 L10.06875,0.849056604 L8.60625,0.849056604 C9.1125,1.18867925 9.50625,1.64150943 9.7875,2.20754717 C10.06875,2.77358491 10.2375,3.39622642 10.2375,4.01886792 C10.2375,4.52830189 10.18125,5.03773585 10.0125,5.43396226 C9.84375,5.83018868 9.61875,6.16981132 9.39375,6.45283019 C9.16875,6.67924528 8.94375,6.96226415 8.6625,7.13207547 C8.4375,7.35849057 8.2125,7.58490566 8.04375,7.81132075 C7.875,8.03773585 7.81875,8.26415094 7.81875,8.54716981 C7.81875,8.71698113 7.875,8.94339623 7.9875,9.11320755 C8.1,9.28301887 8.26875,9.45283019 8.4375,9.62264151 C8.60625,9.79245283 8.83125,9.96226415 9.05625,10.1320755 C9.28125,10.3018868 9.50625,10.5283019 9.73125,10.754717 C9.95625,10.9811321 10.18125,11.2075472 10.35,11.490566 C10.51875,11.7735849 10.6875,12.0566038 10.8,12.3962264 C10.9125,12.7358491 10.96875,13.1320755 10.96875,13.5283019 C10.96875,14.7169811 10.4625,15.7358491 9.45,16.5849057 C8.38125,17.5471698 6.8625,18 4.89375,18 C4.44375,18 4.05,17.9433962 3.6,17.8867925 C3.15,17.8301887 2.7,17.7169811 2.30625,17.5471698 C1.85625,17.3773585 1.4625,17.1509434 1.125,16.9245283 C0.7875,16.6981132 0.50625,16.3584906 0.28125,15.9622642 C0.1125,15.6226415 0,15.2264151 0,14.7169811 C0,14.2641509 0.1125,13.8113208 0.39375,13.245283 C0.61875,12.7924528 0.95625,12.3962264 1.40625,12.0566038 C1.85625,11.7169811 2.41875,11.4339623 2.98125,11.2641509 C3.54375,11.0943396 4.10625,10.9811321 4.66875,10.8679245 C5.175,10.8113208 5.7375,10.754717 6.3,10.6981132 C5.85,10.0754717 5.625,9.56603774 5.625,9.05660377 C5.625,8.94339623 5.625,8.88679245 5.625,8.77358491 C5.625,8.71698113 5.68125,8.60377358 5.68125,8.54716981 C5.68125,8.49056604 5.7375,8.43396226 5.79375,8.32075472 C5.85,8.20754717 5.85,8.1509434 5.85,8.09433962 C5.56875,8.1509434 5.2875,8.1509434 5.11875,8.1509434 C4.05,8.1509434 3.15,7.81132075 2.3625,7.0754717 C1.575,6.33962264 1.2375,5.49056604 1.2375,4.41509434 C1.2375,3.39622642 1.575,2.49056604 2.25,1.69811321 C2.925,0.962264151 3.76875,0.452830189 4.78125,0.226415094 C5.45625,0.0566037736 6.13125,0 6.80625,0 Z M18,2.77358491 L18,4.18867925 L15.24375,4.18867925 L15.24375,6.96226415 L13.8375,6.96226415 L13.8375,4.18867925 L11.08125,4.18867925 L11.08125,2.77358491 L13.8375,2.77358491 L13.8375,0 L15.24375,0 L15.24375,2.77358491 L18,2.77358491 Z" id="Shape"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="social-box__label">Google+
-                            <br>
-                            <span class="social-box__number">3,622</span>
+
+                    <span class="new-member-box__email">a.wood34@example.com</span>
+                </div>
+            </div>
+            <!-- new member box -->
+            <div class="new-member-box">
+                <img src="images/member-4.jpg" alt="profile image" class="new-member-box__profile-img">
+
+                <div class="new-member-box__text-content">
+                    <div class="new-member-box__first-row">
+                        <span class="new-member-box__name">
+                            Dan Oliver
                         </span>
+                        <span class="new-member-box__date">10/15/15</span>
                     </div>
-                </div>
-            </section>
-<!-- New members section -->
-            <section class="new-members">
-                <p class="section-header">NEW MEMBERS</p>
-                 <!-- new member box -->
-                <div class="new-member-box">
-                    <img src="images/member-1.jpg" alt="profile image" class="new-member-box__profile-img">
 
-                    <div class="new-member-box__text-content">
-                        <div class="new-member-box__first-row">
-                            <span class="new-member-box__name">
-                                Victoria Chambers
-                            </span>
-                            <span class="new-member-box__date">10/15/15</span>
-                        </div>
-                        
-                        <span class="new-member-box__email">victoria.chambers80@example.com</span>
-                    </div>  
+                    <span class="new-member-box__email">dan.oliver@example.com</span>
                 </div>
-                <!-- new member box -->
-                <div class="new-member-box">
-                    <img src="images/member-2.jpg" alt="profile image" class="new-member-box__profile-img">
-
-                    <div class="new-member-box__text-content">
-                        <div class="new-member-box__first-row">
-                            <span class="new-member-box__name">
-                                Matt Byrd
-                            </span>
-                            <span class="new-member-box__date">10/15/15</span>
-                        </div>
-                        
-                        <span class="new-member-box__email">matt.byrd80@example.com</span>
-                    </div>  
-                </div>
-                 <!-- new member box -->
-                <div class="new-member-box">
-                    <img src="images/member-3.jpg" alt="profile image" class="new-member-box__profile-img">
-
-                    <div class="new-member-box__text-content">
-                        <div class="new-member-box__first-row">
-                            <span class="new-member-box__name">
-                                Abby Wood
-                            </span>
-                            <span class="new-member-box__date">10/15/15</span>
-                        </div>
-                        
-                        <span class="new-member-box__email">a.wood34@example.com</span>
-                    </div>  
-                </div>
-                 <!-- new member box -->
-                <div class="new-member-box">
-                    <img src="images/member-4.jpg" alt="profile image" class="new-member-box__profile-img">
-
-                    <div class="new-member-box__text-content">
-                        <div class="new-member-box__first-row">
-                            <span class="new-member-box__name">
-                                Dan Oliver
-                            </span>
-                            <span class="new-member-box__date">10/15/15</span>
-                        </div>
-                        
-                        <span class="new-member-box__email">dan.oliver@example.com</span>
-                    </div>  
-                </div>
-            </section>
-<!-- Recent activity section -->
+            </div>
+        </section>
+        <!-- Recent activity section -->
         <section class="recent-activity">
             <p class="section-header">RECENT ACTIVITY</p>
             <!-- activity notice -->
@@ -181,11 +195,11 @@
                             Victoria Chambers commented on <strong>YourApp's SEO Tips</strong>
                         </span>
                         <!-- the arrow button has no functionality, it's just for show hence the p tag-->
-                        <p><i class="recent-activity-box__arrow-right"></i></p> 
+                        <p><i class="recent-activity-box__arrow-right"></i></p>
                     </div>
-                    
+
                     <span class="recent-activity-box__time">4 hours ago</span>
-                </div>  
+                </div>
             </div>
             <!-- new activity notice -->
             <div class="recent-activity-box">
@@ -196,11 +210,11 @@
                             Matt Byrd liked the post <strong>Facebook's Changes for 2016</strong>
                         </span>
                         <!-- the arrow button has no functionality, it's just for show hence the p tag-->
-                        <p><i class="recent-activity-box__arrow-right"></i></p> 
+                        <p><i class="recent-activity-box__arrow-right"></i></p>
                     </div>
-                    
+
                     <span class="recent-activity-box__time">5 hours ago</span>
-                </div>  
+                </div>
             </div>
             <!-- new activity notice -->
             <div class="recent-activity-box">
@@ -211,11 +225,11 @@
                             Abby Wood commented on <strong>Facebook's Changes for 2016</strong>
                         </span>
                         <!-- the arrow button has no functionality, it's just for show hence the p tag-->
-                        <p><i class="recent-activity-box__arrow-right"></i></p> 
+                        <p><i class="recent-activity-box__arrow-right"></i></p>
                     </div>
-                    
+
                     <span class="recent-activity-box__time">5 hours ago</span>
-                </div>  
+                </div>
             </div>
             <!-- new activity notice -->
             <div class="recent-activity-box">
@@ -226,29 +240,33 @@
                             Dan Oliver posted <strong>YourApp's SEO Tips</strong>
                         </span>
                         <!-- the arrow button has no functionality, it's just for show hence the p tag-->
-                        <p><i class="recent-activity-box__arrow-right"></i></p> 
+                        <p><i class="recent-activity-box__arrow-right"></i></p>
                     </div>
-                    
+
                     <span class="recent-activity-box__time">1 day ago</span>
-                </div>  
+                </div>
             </div>
 
 
 
         </section>
 
-<!-- Message user -->
-            <div class="message-user">
-                message user
-            </div>
+        <!-- Message user -->
+        <div class="message-user">
+            <p class="section-header">MESSAGE USER</p>
+            <input type="text" class="message-user__searchbox" placeholder="Search for user">
+            <textarea rows="6" class="message-user__textbox" placeholder="Message for user"></textarea>
+            <button class="send-button">Send</button>
+        </div>
+        
+        <!-- Settings -->
+        <div class="settings">
+            settings
+        </div>
 
-<!-- Settings -->
-            <div class="settings">
-                settings
-            </div>
-      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

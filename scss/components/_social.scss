@@ -10,9 +10,9 @@
 }
 
 .social-box {
-    background-color: rgba(245, 245, 245, 0.986);
-    border: solid 1px rgb(194, 194, 194);
-    border-radius: 5%;
+    background-color: $gray-in-box;
+    border: solid 1px $gray-outline;
+    border-radius: 5px;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
     }
     &__number {
     display: inline-block;
-    color: rgb(85, 85, 85);
+    color: $gray-text;
     font-weight: 300;
     font-size: 1.5em;
     padding-top: 4px;
