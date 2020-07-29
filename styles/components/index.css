@@ -177,4 +177,67 @@ nav img {
   flex-direction: column;
 }
 
+/* line 3, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+.all-social-boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+.social-box {
+  background-color: rgba(245, 245, 245, 0.986);
+  border: solid 1px #c2c2c2;
+  border-radius: 5%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 12px;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+.social-box__label {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #7F86CA;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+.social-box__number {
+  display: inline-block;
+  color: #555555;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-top: 4px;
+}
+
+/* line 3, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_charts.scss */
+#traffic-chart,
+#dailyCanvas,
+#mobile-users {
+  border: solid 1px #c2c2c2;
+  padding-top: 10px;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-members {
+  border: solid 1px #c2c2c2;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__profile-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__name {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=index.css.map */
