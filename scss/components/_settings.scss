@@ -1,0 +1,39 @@
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.settings-content label {
+    display: flex;
+    width: 75%;
+    margin: 6px 0px;
+    color: $gray-text;
+    &:first-child {
+        margin-top: 10px;
+    }
+}
+
+.settings-content input[type=checkbox] {
+    margin-left: auto;
+}
+
+.save-button,
+.cancel-button {
+    width: 50%;
+    margin: 5px auto;
+    padding: 13px;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.save-button {
+    background-color: $light-purple;
+}
+
+.cancel-button {
+    background-color: $gray-outline;
+}

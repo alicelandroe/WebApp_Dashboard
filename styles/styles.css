@@ -416,4 +416,52 @@ i {
   border: none;
 }
 
+/* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.settings-content label {
+  display: flex;
+  width: 75%;
+  margin: 6px 0px;
+  color: #555555;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.settings-content label:first-child {
+  margin-top: 10px;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.settings-content input[type=checkbox] {
+  margin-left: auto;
+}
+
+/* line 22, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.save-button,
+.cancel-button {
+  width: 50%;
+  margin: 5px auto;
+  padding: 13px;
+  display: block;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.save-button {
+  background-color: #7F86CA;
+}
+
+/* line 37, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_settings.scss */
+.cancel-button {
+  background-color: #c2c2c2;
+}
+
 /*# sourceMappingURL=styles.css.map */
