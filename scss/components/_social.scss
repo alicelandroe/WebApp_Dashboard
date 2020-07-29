@@ -1,6 +1,10 @@
 // Styling the "social stats" section
+.social-stats {
+    margin-top: 30px;
+}
 
 .all-social-boxes {
+    margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -15,7 +19,6 @@
     align-items: center;
     text-align: center;
     padding: 20px 12px;
-
     &__label {
         display: inline-block;
         padding-top: 16px;
@@ -24,7 +27,6 @@
         font-size: 0.9em;
         color: $light-purple;
     }
-
     &__number {
     display: inline-block;
     color: rgb(85, 85, 85);

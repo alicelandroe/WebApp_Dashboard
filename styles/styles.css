@@ -59,28 +59,36 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* line 3, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+.section-header {
+  padding-left: 12px;
+  color: #575656;
+  padding-top: 26px;
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 4, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 10fr;
   }
-  /* line 9, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   header {
     grid-column: 1/4;
   }
-  /* line 13, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 20, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  /* line 18, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  /* line 25, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   .full-width {
     grid-column: 1/3;
   }
 }
 
-/* line 26, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+/* line 33, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
 .profile-picture {
   border-radius: 50%;
   height: 35px;
@@ -177,13 +185,19 @@ nav img {
   flex-direction: column;
 }
 
-/* line 3, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+/* line 2, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+.social-stats {
+  margin-top: 30px;
+}
+
+/* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
 .all-social-boxes {
+  margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
 }
 
-/* line 8, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+/* line 12, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
 .social-box {
   background-color: rgba(245, 245, 245, 0.986);
   border: solid 1px #c2c2c2;
@@ -196,7 +210,7 @@ nav img {
   padding: 20px 12px;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+/* line 22, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
 .social-box__label {
   display: inline-block;
   padding-top: 16px;
@@ -206,7 +220,7 @@ nav img {
   color: #7F86CA;
 }
 
-/* line 28, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+/* line 30, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
 .social-box__number {
   display: inline-block;
   color: #555555;
@@ -219,13 +233,11 @@ nav img {
 #traffic-chart,
 #dailyCanvas,
 #mobile-users {
-  border: solid 1px #c2c2c2;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-members {
-  border: solid 1px #c2c2c2;
   width: 97%;
   margin: 10px auto;
 }
@@ -241,27 +253,27 @@ nav img {
   border-bottom: solid 1px #c2c2c2;
 }
 
-/* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__first-row {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 20, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__text-content {
   width: 100%;
 }
 
-/* line 24, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 23, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__profile-img {
   display: inline-block;
   border-radius: 50%;
-  padding: 0 10px;
+  padding: 0 5px;
   width: 40px;
   height: 40px;
 }
 
-/* line 31, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 30, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__name {
   display: inline-block;
   justify-content: space-evenly;
@@ -269,26 +281,27 @@ nav img {
   color: #3a3939;
 }
 
-/* line 37, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 36, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__email {
   color: #7F86CA;
   font-size: 0.8em;
 }
 
-/* line 41, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 40, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__date {
   font-size: 0.9em;
   color: #555555;
 }
 
-/* line 47, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 46, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box:last-child {
   border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity {
-  border: solid 1px #c2c2c2;
   width: 97%;
   margin: 10px auto;
 }
@@ -307,23 +320,24 @@ nav img {
 /* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__first-row {
   display: flex;
+  justify-content: space-between;
 }
 
-/* line 20, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__text-content {
   width: 100%;
 }
 
-/* line 23, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 24, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__profile-img {
   display: inline-block;
   border-radius: 50%;
-  padding: 0 10px;
+  padding: 0 5px;
   width: 40px;
   height: 40px;
 }
 
-/* line 30, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 31, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__activity {
   display: inline-block;
   justify-content: space-evenly;
@@ -331,24 +345,24 @@ nav img {
   color: #3a3939;
 }
 
-/* line 36, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 37, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__time {
   color: #3a3939;
   font-size: 0.7em;
 }
 
-/* line 40, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 41, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__arrow-right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-/* line 46, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 47, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box__first-row p {
   margin: 0px;
 }
 
-/* line 50, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 51, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 i {
   border: solid #7F86CA;
   border-width: 0 3px 3px 0;
@@ -356,7 +370,7 @@ i {
   padding: 3px;
 }
 
-/* line 57, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
+/* line 58, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_recentActivities.scss */
 .recent-activity-box:last-child {
   border-bottom: none;
 }

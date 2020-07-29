@@ -1,5 +1,5 @@
 .new-members {
-    border: solid 1px $gray-outline;
+    // border: solid 1px $gray-outline;
     width: 97%;
     margin: 10px auto;
    
@@ -13,7 +13,6 @@
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: solid 1px $gray-outline;
-
     &__first-row {
         display: flex;
         justify-content: space-between;
@@ -24,7 +23,7 @@
     &__profile-img {
         display: inline-block;
         border-radius: 50%;
-        padding: 0 10px;
+        padding: 0 5px;
         width: 40px;
         height: 40px;
     }
@@ -46,4 +45,6 @@
 
 .new-member-box:last-child {
     border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
