@@ -49,7 +49,7 @@ header {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  border-left: solid #6772CA 1px;
+  border-left: solid #7F86CA 1px;
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_body.scss */
@@ -226,18 +226,64 @@ nav img {
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-members {
   border: solid 1px #c2c2c2;
+  width: 97%;
+  margin: 10px auto;
 }
 
-/* line 9, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 8, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 5px auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: solid 1px #c2c2c2;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__text-content {
+  width: 100%;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__profile-img {
+  display: inline-block;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
 }
 
-/* line 15, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+/* line 31, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
 .new-member-box__name {
   display: inline-block;
+  justify-content: space-evenly;
+  font-size: 0.9em;
+  color: #3a3939;
+}
+
+/* line 37, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__email {
+  color: #7F86CA;
+  font-size: 0.8em;
+}
+
+/* line 41, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box__date {
+  font-size: 0.9em;
+  color: #555555;
+}
+
+/* line 47, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_newMembers.scss */
+.new-member-box:last-child {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

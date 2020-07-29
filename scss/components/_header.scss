@@ -1,5 +1,5 @@
 header {
-    background-color: #7F86CA;
+    background-color: $light-purple;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,5 +40,5 @@ header {
     display: flex;
     align-items: center;
     padding-left: 10px;
-    border-left: solid #6772CA 1px;
+    border-left: solid $light-purple 1px;
 }

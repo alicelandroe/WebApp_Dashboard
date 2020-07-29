@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../../scss/utilities/index.scss",
+		"../../scss/utilities/_colors.scss"
+	],
+	"sourcesContent": [
+		"@import 'colors';",
+		"// COLORS\n$white: #fff;\n$light-purple: #7F86CA;\n$dark-purple: #57587F;\n$gray-outline: rgb(194, 194, 194);\n\n"
+	],
+	"names": [],
+	"mappings": ""
+}
