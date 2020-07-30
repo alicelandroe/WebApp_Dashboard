@@ -22,7 +22,7 @@
                 </div>
             </div>
         </header>
-        <!-- Navigation -->
+<!-- Navigation -->
         <nav class="navigation">
             <img src="icons/icon-dashboard.svg" alt="dashboard" height="20" width="40">
             <img src="icons/icon-members.svg" alt="members" height="20" width="40">
@@ -34,19 +34,19 @@
             <h1>Dashboard</h1>
             <p>Search</p>
         </div>
-        <!-- Alert message -->
+<!-- Alert message -->
         <div class="alert full-width">
             <p><strong>Alert</strong>
                 Quasi delenit necessitatibus unde nesciunt iste omnis volupta recusandae.
                 Maxime nesciunt unde pimus culpa?</p>
             <button type="button">&times;</button>
         </div>
-        <!-- Charts -->
+<!-- Charts -->
         <canvas id="traffic-chart" width="400" height="400"></canvas>
         <canvas id="dailyCanvas" width="400" height="400"></canvas>
         <canvas id="mobile-users" width="400" height="400"></canvas>
 
-        <!-- Social stats section -->
+<!-- Social stats section -->
         <section class="social-stats full-width">
             <p class="section-header">SOCIAL STATS</p>
 
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <!-- New members section -->
+<!-- New members section -->
         <section class="new-members">
             <p class="section-header">NEW MEMBERS</p>
             <!-- new member box -->
@@ -183,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <!-- Recent activity section -->
+<!-- Recent activity section -->
         <section class="recent-activity">
             <p class="section-header">RECENT ACTIVITY</p>
             <!-- activity notice -->
@@ -251,7 +251,7 @@
 
         </section>
 
-        <!-- Message user -->
+<!-- Message user -->
         <div class="message-user">
             <p class="section-header">MESSAGE USER</p>
             <input type="text" class="message-user__searchbox" placeholder="Search for user">
@@ -259,22 +259,45 @@
             <button class="send-button">Send</button>
         </div>
 
-        <!-- Settings -->
+<!-- Settings -->
         <div class="settings">
             <p class="section-header">SETTINGS</p>
             <div class="settings-content">
-                
-                <label>Send Email Notifications <input type="checkbox"></label>
-                <label>Set Profile to Public <input type="checkbox"></label>
+
+                <!-- checkboxes -->
+                <div class="checkboxes">
+                    <label class="switch">
+                        Send Email Notifications 
+                        <input type="checkbox" checked>
+                        <span class="slider round">
+                            <span class="on">on</span>
+                            <span class="off">off</span>
+                        </span>
+                    </label>
+
+                    <label class="switch">
+                        Set Profile to Public 
+                        <input type="checkbox" checked>
+                        <span class="slider round">
+                            <span class="on">on</span>
+                            <span class="off">off</span>
+                        </span>
+                    </label>
+                 </div>
+                <!-- dropwdown menu -->
                 <select name="time" id="timezone">
-                    <option value="option 1">option 1</option>
-                    <option value="option 1">option 1</option>
-                    <option value="option 1">option 1</option>
-                    <option value="option 1">option 1</option>
+                    <option value="">Select timezone</option>
+                    <option value="option 1">UTC+03:00 (EAT)</option>
+                    <option value="option 2">UTC+02:00 (EET)</option>
+                    <option value="option 3">UTC+01:00 (CET)</option>
+                    <option value="option 4">UTC+01:00 (CET)</option>
                 </select>
             </div>
-            <button class="save-button">Save</button>
-            <button class="cancel-button">Cancel</button>
+            <!-- save/cancel buttons -->
+            <div class="buttons">
+                <button class="save-button">SAVE</button>
+                <button class="cancel-button">CANCEL</button>
+            </div>
        </div>
 
     </div>
