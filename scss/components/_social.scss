@@ -1,4 +1,8 @@
 // Styling the "social stats" section
+.social-stats {
+    border-bottom: $border;
+    padding-bottom: 30px;
+}
 
 .all-social-boxes {
     margin-top: 15px;
@@ -30,5 +34,25 @@
     font-weight: 300;
     font-size: 1.5em;
     padding-top: 4px;
+    }
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        padding-left: 15px;
+        padding-right: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
+        &__label {
+            padding-left: 13px;
+            font-size: 0.8em;
+        }
+        &__number {
+            font-size: 2.2em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .social-box svg {
     }
 }
