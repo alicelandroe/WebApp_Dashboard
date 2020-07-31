@@ -3,5 +3,14 @@
 #traffic-chart,
 #dailyCanvas,
 #mobile-users {
-    margin-top: 20px;
+    margin: 20px auto;
+    display: block;
+}
+
+@media only screen and (min-width: $break-tablet) {
+    element.style {
+        height: 373px;
+        width: 661px;
+        margin: 30px auto;
+        }
 }

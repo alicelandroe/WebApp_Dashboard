@@ -60,11 +60,15 @@
         </div>
         <!-- Charts -->
         <p class="section-header">TRAFFIC</p>
-        <canvas id="traffic-chart" width="400" height="400"></canvas>
-        <p class="section-header">DAILY TRAFFIC</p>
-        <canvas id="dailyCanvas" width="400" height="400"></canvas>
-        <p class="section-header">MOBILE USERS</p>
-        <canvas id="mobile-users" width="400" height="400"></canvas>
+        <div>
+            <canvas height="300" id="traffic-chart"></canvas>
+        </div>
+
+
+            <p class="section-header">DAILY TRAFFIC</p>
+            <canvas id="dailyCanvas"></canvas>
+            <p class="section-header">MOBILE USERS</p>
+            <canvas id="mobile-users"></canvas>
 
         <!-- Social stats section -->
         <section class="social-stats full-width">
@@ -140,7 +144,7 @@
             </div>
         </section>
         <!-- New members section -->
-        <section class="new-members">
+        <section class="new-members half-width">
             <p class="section-header">NEW MEMBERS</p>
             <!-- new member box -->
             <div class="new-member-box">
@@ -203,8 +207,8 @@
                 </div>
             </div>
         </section>
-        <!-- Recent activity section -->
-        <section class="recent-activity">
+<!-- Recent activity section -->
+        <section class="recent-activity half-width">
             <p class="section-header">RECENT ACTIVITY</p>
             <!-- activity notice -->
             <div class="recent-activity-box">
@@ -272,7 +276,7 @@
         </section>
 
         <!-- Message user -->
-        <section class="message-user">
+        <section class="message-user half-width">
             <p class="section-header">MESSAGE USER</p>
             <form>
                 <input type="text" class="message-user__searchbox" placeholder="Search for user">
@@ -282,16 +286,8 @@
         </section>
 
 
-        <!-- FROM STUDY GUIDE
-<form class="widget-container">
-    <input type="text" placeholder="Search for user" class="form-field" id="userField">
-    <textarea placeholder="Message for user" class="form-area" id= "messageField"></textarea>
-    <button class="button-primary" id="send">Send</button>
-</form> 
--->
-
-        <!-- Settings -->
-        <div class="settings">
+<!-- Settings -->
+        <div class="settings half-width">
             <p class="section-header">SETTINGS</p>
             <div class="settings-content">
 

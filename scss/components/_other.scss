@@ -9,28 +9,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-.wrapper {
-    display: grid;
-    grid-template-columns: 70px 10fr;
-    }   
+    .wrapper {
+        display: grid;
+        grid-template-columns: 70px 10fr;
+    } 
 
-// header {
-//     grid-column: 1/4;
-// }
-
-// section {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-// }
-
-.navigation {
+    .half-width {
+        
     
-}
-
-// .full-width {
-//     grid-column: 1/3;
-// }
-
+    }
 
 }
 
