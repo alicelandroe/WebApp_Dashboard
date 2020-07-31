@@ -3,8 +3,18 @@
 #traffic-chart,
 #dailyCanvas,
 #mobile-users {
-    margin: 20px auto;
+    margin: 30px auto;
     display: block;
+}
+
+.chart-border-1,
+.chart-border-2 {
+    border-top: $border;
+    border-bottom: $border;
+}
+
+.chart-border-1 {
+    border-right: $border;
 }
 
 @media only screen and (min-width: $break-tablet) {

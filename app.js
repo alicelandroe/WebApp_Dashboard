@@ -105,6 +105,9 @@ const mobileChart = new Chart(mobileUsers, {
     },
     options: {
         maintainAspectRatio: false,
+        legend: {
+            position: 'right',
+         },
         title: {
             display: false,
         },
