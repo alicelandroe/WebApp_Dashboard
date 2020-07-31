@@ -7,7 +7,7 @@
 	],
 	"sourcesContent": [
 		"@import 'variables';",
-		"// COLORS\n$white: #fff;\n$light-purple: #7F86CA;\n$dark-purple: #57587F;\n$gray-outline: rgb(194, 194, 194);\n$gray-in-box: rgba(241, 240, 240, 0.986);\n$gray-text: rgb(85, 85, 85);\n$gray-button: rgb(122, 120, 120);\n\n$border: solid 1px $gray-outline;"
+		"// COLORS\n$white: #fff;\n$light-purple: #7F86CA;\n$dark-purple: #57587F;\n$gray-outline: rgb(194, 194, 194);\n$gray-in-box: rgba(241, 240, 240, 0.986);\n$gray-text: rgb(85, 85, 85);\n$gray-button: rgb(122, 120, 120);\n\n// BORDER\n$border: solid 1px $gray-outline;\n\n// MEDIA QUERIES\n\n$break-tablet: 768px;\n$break-desktop: 1024px;\n\n"
 	],
 	"names": [],
 	"mappings": ""

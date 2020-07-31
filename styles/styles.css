@@ -8,43 +8,64 @@ header {
 }
 
 /* line 9, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.marker {
+  position: relative;
+  top: -12px;
+  right: 6px;
+  height: 7px;
+  width: 7px;
+  border-radius: 70px;
+  background: #00ff88;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.notification-svg:hover {
+  stroke: #00ff88;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+.st0:hover {
+  fill: #00ff88;
+}
+
+/* line 27, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .header-items {
   display: flex;
   align-items: center;
 }
 
-/* line 14, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+/* line 32, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .header-app-name {
   color: #ebecf7;
   font-size: 1.2em;
   font-weight: 300;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+/* line 37, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .header-app-name sup {
   font-size: 0.4em;
 }
 
-/* line 24, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+/* line 42, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .header-app-name,
 .header-items {
   padding: 7px;
 }
 
-/* line 29, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+/* line 47, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .member-name {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 32, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+  /* line 50, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
   .member-name {
     display: block;
     color: white;
   }
 }
 
-/* line 39, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
+/* line 59, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_header.scss */
 .profile {
   display: flex;
   align-items: center;
@@ -72,24 +93,11 @@ body {
   /* line 12, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
   .wrapper {
     display: grid;
-    grid-template-columns: 1fr 10fr;
-  }
-  /* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
-  header {
-    grid-column: 1/4;
-  }
-  /* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  /* line 26, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
-  .full-width {
-    grid-column: 1/3;
+    grid-template-columns: 70px 10fr;
   }
 }
 
-/* line 34, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+/* line 38, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
 .profile-picture {
   border-radius: 50%;
   height: 35px;
@@ -102,28 +110,27 @@ body {
   padding: 15px;
 }
 
-/* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
+@media only screen and (min-width: 768px) {
+  /* line 6, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
+  .navigation {
+    flex-direction: column;
+    justify-content: start;
+  }
+  /* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
+  .navigation img {
+    padding: 15px 0px;
+  }
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
 nav {
   display: flex;
   justify-content: center;
 }
 
-/* line 11, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
+/* line 22, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
 nav img {
   padding: 0px 3px;
-}
-
-@media only screen and (min-width: 768px) {
-  /* line 16, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
-  nav {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  /* line 21, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */
-  nav img {
-    padding: 15px 0px;
-  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_dashboard.scss */

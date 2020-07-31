@@ -6,6 +6,24 @@ header {
     padding: 0px 10px;
 }
 
+.marker {
+    position: relative;
+    top: -12px;
+    right: 6px;
+    height: 7px;
+    width: 7px;
+    border-radius: 70px;
+    background: #00ff88;
+  }
+
+
+.notification-svg:hover {
+    stroke: #00ff88;
+}
+
+.st0:hover {
+    fill: #00ff88;
+}
 .header-items {
     display: flex;
     align-items: center;
@@ -28,13 +46,15 @@ header {
 
 .member-name {
     display: none;
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $break-tablet) {
         &{
             display: block;
             color: white;
+            
         }
     }
 }
+
 
 .profile {
     display: flex;

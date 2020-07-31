@@ -10,38 +10,55 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <span class="header-app-name"><strong>Your</strong>App<sup>TM</sup></span>
-            <div class="header-items">
-                <img src="icons/icon-bell.svg" alt="notifications" height="20" width="40">
 
-                <div class="profile">
-                    <img src="images/member-3.jpg" alt="profile picture" class="profile-picture">
-                    <span class="member-name">Jane Chiu</span>
-                </div>
+    <header>
+        <span class="header-app-name"><strong>Your</strong>App<sup>TM</sup></span>
+        <div class="header-items">
+            <svg class="notification-svg" width="25px" height="45px" x="0px" y="0px" viewBox="0 0 32 32"
+                style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #FFFFFF;
+                    }
+                </style>
+                <g id="_x36__6_">
+                    <g>
+                        <path class="st0"
+                            d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                                c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z" />
+                    </g>
+                </g>
+            </svg>
+            <div class="marker"></div>
+            <div class="profile">
+                <img src="images/member-3.jpg" alt="profile picture" class="profile-picture">
+                <span class="member-name">Jane Chiu</span>
             </div>
-        </header>
-<!-- Navigation -->
-        <nav class="navigation">
-            <img src="icons/icon-dashboard.svg" alt="dashboard" height="20" width="40">
-            <img src="icons/icon-members.svg" alt="members" height="20" width="40">
-            <img src="icons/icon-visits.svg" alt="visits" height="20" width="40">
-            <img src="icons/icon-settings.svg" alt="settings" height="20" width="40">
-        </nav>
+        </div>
+    </header>
 
+    <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="navigation">
+        <img src="icons/icon-dashboard.svg" alt="dashboard" height="20" width="40">
+        <img src="icons/icon-members.svg" alt="members" height="20" width="40">
+        <img src="icons/icon-visits.svg" alt="visits" height="20" width="40">
+        <img src="icons/icon-settings.svg" alt="settings" height="20" width="40">
+    </nav>
+
+    <div>
         <div class="dashboard-head full-width">
             <h1>Dashboard</h1>
             <p>Search</p>
         </div>
-<!-- Alert message -->
+        <!-- Alert message -->
         <div class="alert full-width">
             <p><strong>Alert</strong>
                 Quasi delenit necessitatibus unde nesciunt iste omnis volupta recusandae.
                 Maxime nesciunt unde pimus culpa?</p>
             <button type="button" class="close-button">&times;</button>
         </div>
-<!-- Charts -->
+        <!-- Charts -->
         <p class="section-header">TRAFFIC</p>
         <canvas id="traffic-chart" width="400" height="400"></canvas>
         <p class="section-header">DAILY TRAFFIC</p>
@@ -49,7 +66,7 @@
         <p class="section-header">MOBILE USERS</p>
         <canvas id="mobile-users" width="400" height="400"></canvas>
 
-<!-- Social stats section -->
+        <!-- Social stats section -->
         <section class="social-stats full-width">
             <p class="section-header">SOCIAL STATS</p>
 
@@ -122,7 +139,7 @@
                 </div>
             </div>
         </section>
-<!-- New members section -->
+        <!-- New members section -->
         <section class="new-members">
             <p class="section-header">NEW MEMBERS</p>
             <!-- new member box -->
@@ -186,7 +203,7 @@
                 </div>
             </div>
         </section>
-<!-- Recent activity section -->
+        <!-- Recent activity section -->
         <section class="recent-activity">
             <p class="section-header">RECENT ACTIVITY</p>
             <!-- activity notice -->
@@ -254,7 +271,7 @@
 
         </section>
 
-<!-- Message user -->
+        <!-- Message user -->
         <section class="message-user">
             <p class="section-header">MESSAGE USER</p>
             <form>
@@ -265,7 +282,7 @@
         </section>
 
 
-<!-- FROM STUDY GUIDE
+        <!-- FROM STUDY GUIDE
 <form class="widget-container">
     <input type="text" placeholder="Search for user" class="form-field" id="userField">
     <textarea placeholder="Message for user" class="form-area" id= "messageField"></textarea>
@@ -273,7 +290,7 @@
 </form> 
 -->
 
-<!-- Settings -->
+        <!-- Settings -->
         <div class="settings">
             <p class="section-header">SETTINGS</p>
             <div class="settings-content">
@@ -281,7 +298,7 @@
                 <!-- checkboxes -->
                 <div class="checkboxes">
                     <label class="switch">
-                        Send Email Notifications 
+                        Send Email Notifications
                         <input type="checkbox" checked>
                         <span class="slider round">
                             <span class="on">on</span>
@@ -290,14 +307,14 @@
                     </label>
 
                     <label class="switch">
-                        Set Profile to Public 
+                        Set Profile to Public
                         <input type="checkbox" checked>
                         <span class="slider round">
                             <span class="on">on</span>
                             <span class="off">off</span>
                         </span>
                     </label>
-                 </div>
+                </div>
                 <!-- dropwdown menu -->
                 <select name="time" id="timezone">
                     <option value="">Select timezone</option>
@@ -312,7 +329,8 @@
                 <button class="save-button">SAVE</button>
                 <button class="cancel-button">CANCEL</button>
             </div>
-       </div>
+        </div>
+    </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
