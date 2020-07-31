@@ -1,9 +1,9 @@
-.dashboard-head {
+.dashboard-search {
     display: flex;
 
 }
 
-.dashboard-head h1 {
+.dashboard-search h1 {
     width: 30%;
     background-color: white;
     font-size: 1em;
@@ -13,10 +13,27 @@
     border-right: solid black 1px;
 }
 
-.dashboard-head p {
+.dashboard-search p {
     width: 70%;
     background-color: whitesmoke;
     padding-top: 16px;
     padding-left: 19px;
     margin-top: 0px;
+}
+
+.search-outside-box {
+    width: 70%;
+    display: flex;
+}
+
+.searchbox {
+    width: 40%;
+    margin-left: 240px;
+    align-self: center;
+    justify-content: right;
+    padding: 10px;
+    display: block;
+    background-color: $gray-in-box;
+    border: $border;
+    border-radius: 5px;
 }
