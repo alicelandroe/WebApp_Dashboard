@@ -1,3 +1,12 @@
+// Remove the alert message by clicking X 
+
+const closeButton = document.querySelector('.close-button');
+
+closeButton.addEventListener('click', (e) => {
+    const alertMessage = document.querySelector('.alert');
+    alertMessage.style.display = 'none';
+})
+
 // TRAFFIC GRAPH
 const trafficCanvas = document.getElementById('traffic-chart').getContext('2d');
 const myChart = new Chart(trafficCanvas, {
@@ -98,3 +107,9 @@ const mobileChart = new Chart(mobileUsers, {
         },
     }
 });
+
+
+// Create a “Send” button and use JS to allow you to submit the form and 
+// display a confirmation the message was sent.
+//  You won't actually submit the form, just simulate the action using JavaScript.
+
