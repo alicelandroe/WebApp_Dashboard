@@ -1,6 +1,7 @@
 .message-user {
-    width: 97%;
-    margin: auto;
+    padding: 0 7px;
+    border-top: $border;
+    border-right: $border;
     &__searchbox,
     &__textbox {
         width: 87%;

@@ -1,7 +1,6 @@
 .settings {
-    width: 97%;
-    margin: auto;
-    margin-bottom: 40px;
+   padding: 0 5px;
+    border-top: $border;
 }
 
 .settings-content {
@@ -66,8 +65,7 @@
 // checkboxes
 
 .checkboxes {
-    // width: 70%;
-    // justify-content: space-evenly;
+    padding: 10px 0px;
 }
 
 .switch {
