@@ -42,8 +42,11 @@
             <button type="button" class="close-button">&times;</button>
         </div>
 <!-- Charts -->
+        <p class="section-header">TRAFFIC</p>
         <canvas id="traffic-chart" width="400" height="400"></canvas>
+        <p class="section-header">DAILY TRAFFIC</p>
         <canvas id="dailyCanvas" width="400" height="400"></canvas>
+        <p class="section-header">MOBILE USERS</p>
         <canvas id="mobile-users" width="400" height="400"></canvas>
 
 <!-- Social stats section -->
@@ -254,19 +257,21 @@
 <!-- Message user -->
         <section class="message-user">
             <p class="section-header">MESSAGE USER</p>
-            <input type="text" class="message-user__searchbox" placeholder="Search for user">
-            <textarea rows="6" class="message-user__textbox" placeholder="Message for user"></textarea>
-            <button class="send-button">Send</button>
+            <form>
+                <input type="text" class="message-user__searchbox" placeholder="Search for user">
+                <textarea rows="6" class="message-user__textbox" placeholder="Message for user"></textarea>
+                <button type="button" class="send-button">Send</button>
+            </form>
         </section>
 
 
-<!-- <form class="widget-container">
-<input type="text" placeholder="Search for user"
-class="form-field" id="userField">
-<textarea placeholder="Message for user" class="form-area"
-id= "messageField" ></textarea>
-<button class="button-primary" id="send" >Send</button>
-</form> -->
+<!-- FROM STUDY GUIDE
+<form class="widget-container">
+    <input type="text" placeholder="Search for user" class="form-field" id="userField">
+    <textarea placeholder="Message for user" class="form-area" id= "messageField"></textarea>
+    <button class="button-primary" id="send">Send</button>
+</form> 
+-->
 
 <!-- Settings -->
         <div class="settings">

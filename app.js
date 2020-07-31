@@ -33,12 +33,14 @@ const myChart = new Chart(trafficCanvas, {
         }]
     },
     options: {
+        animation: {
+            duration: 0
+            },
         legend: {
             display: false
         },
         title: {
-            display: true,
-            text: 'Traffic',
+            display: false,
         },
         scales: {
             yAxes: [{
@@ -69,8 +71,8 @@ const dailyChart = new Chart(dailyCanvas, {
             display: false
         },
         title: {
-            display: true,
-            text: 'Daily traffic',
+            display: false,
+        },
         },
         scales: {
             yAxes: [{
@@ -79,8 +81,7 @@ const dailyChart = new Chart(dailyCanvas, {
                 }
             }]
         }
-    }
-});
+    });
 
 // MOBILE USERS CHART
 
@@ -102,14 +103,29 @@ const mobileChart = new Chart(mobileUsers, {
     },
     options: {
         title: {
-            display: true,
-            text: 'Mobile',
+            display: false,
         },
     }
 });
 
+const user = document.querySelector('.message-user__searchbox');
+const message = document.querySelector('.message-user__textbox');
+const send = document.querySelector('.send-button');
 
-// Create a “Send” button and use JS to allow you to submit the form and 
-// display a confirmation the message was sent.
-//  You won't actually submit the form, just simulate the action using JavaScript.
+
+send.addEventListener('click', (e) => {
+    if (user.value === "" && message.value === "") {
+         alert("Please choose a recipient, and write a message! :)");
+     } 
+    else if (user.value === "" && message.value !== "") {
+        alert("Please choose a recipient! :)");
+    } 
+    else if (user.value !== "" && message.value === "") {
+        alert("Please write a message! :)");
+    } 
+    else {
+        alert(`Your message was sent to ${user.value}! :)`);
+    }
+})
+
 
