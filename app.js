@@ -68,6 +68,7 @@ const dailyChart = new Chart(dailyCanvas, {
             }]
     },
     options: {
+        maintainAspectRatio: false,
         legend: {
             display: false
         },
@@ -103,6 +104,7 @@ const mobileChart = new Chart(mobileUsers, {
         }]
     },
     options: {
+        maintainAspectRatio: false,
         title: {
             display: false,
         },
