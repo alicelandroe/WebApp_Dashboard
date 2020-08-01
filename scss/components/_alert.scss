@@ -3,9 +3,13 @@
     border-radius: 5px;
     width: 90%;
     margin: 5px auto;
+    margin-top: 20px;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
+    @media only screen and (min-width: $break-desktop) {
+        width: 92%;
+    }
 }
 
 .alert p {
