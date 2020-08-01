@@ -18,6 +18,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column: 2/3;
+        @media only screen and (min-width: $break-desktop) {
+            margin-bottom: 50px;
+        }
     }
 
     .full-width {
