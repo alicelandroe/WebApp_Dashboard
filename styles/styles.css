@@ -350,6 +350,19 @@ nav img {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  /* line 13, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+  .social-box {
+    padding-left: 33px;
+    padding-right: 54px;
+    text-align: left;
+  }
+  /* line 57, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_social.scss */
+  .social-box__number {
+    font-size: 2.7em;
+  }
+}
+
 /* line 3, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_charts.scss */
 #traffic-chart,
 #dailyCanvas,
