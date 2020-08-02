@@ -126,8 +126,26 @@ body {
 }
 
 /* line 39, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+.chart-wrapper.full-width {
+  margin: 20px;
+  position: relative;
+  height: 40vh;
+  width: 90vw;
+}
+
+/* line 46, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
 .chart-wrapper {
-  margin: 0 20px;
+  position: relative;
+  margin: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 46, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_other.scss */
+  .chart-wrapper {
+    margin: 22px;
+    height: 30vh;
+    width: 40vw;
+  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/alicefogelberg/Desktop/coding projects/WebApp_Dashboard/scss/components/_navigation.scss */

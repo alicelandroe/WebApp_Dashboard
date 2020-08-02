@@ -33,6 +33,7 @@ const myChart = new Chart(trafficCanvas, {
         }]
     },
     options: {
+        responsive: true,
         maintainAspectRatio: false,
         animation: {
             duration: 0
