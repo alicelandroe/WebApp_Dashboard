@@ -20,7 +20,7 @@
 		"../scss/components/_settings.scss"
 	],
 	"sourcesContent": [
-		"@import 'utilities/index.scss', 'components/index.scss';",
+		"@import 'utilities/index.scss', 'components/index.scss';    ",
 		"@import 'variables';",
 		"// COLORS\n$white: #fff;\n$light-purple: #7F86CA;\n$dark-purple: #57587F;\n$gray-outline: rgb(194, 194, 194);\n$gray-in-box: #f5f4f4;\n$gray-text: rgb(85, 85, 85);\n$gray-button: rgb(122, 120, 120);\n\n// BORDER\n$border: solid 1px $gray-outline;\n\n// MEDIA QUERIES\n\n$break-tablet: 768px;\n$break-desktop: 1024px;\n\n",
 		"@import 'header', 'body', 'other', 'navigation', 'dashboard', \n'alert', 'social', 'charts', 'newMembers', 'recentActivities', 'messageUser', 'settings';",
